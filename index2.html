@@ -3,31 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Piano Recitals</title>
+  <title>🎹 My Piano Recitals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; background: #f4f4f4; }
-    h1 { color: #333; }
-    .recital { margin-bottom: 2rem; }
-    audio, video { width: 100%; max-width: 600px; margin-top: 0.5rem; }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #f76c6c;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .recital {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .recital h2 {
+      margin-top: 0;
+      color: #4a4a4a;
+    }
+    audio, video, iframe {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #fff;
+      font-size: 0.9rem;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-  <h1>🎶 My Best Piano Recitals</h1>
 
-  <div class="recital">
-    <h2>🎵 Maple Leaf Rag by Scott Joplin performed by Stephen Murphy (Google Drive)</h2>
-    <iframe src="https://drive.google.com/file/d/1NET-w1tWJ4bSzO7az1HNd-6jOOFRNxH0/preview" width="600" height="400" allow="autoplay"></iframe>
+  <header>
+    <h1>🎶 My Piano Recitals</h1>
+    <p>Teenage passion meets classical vibes</p>
+  </header>
+
+  <div class="container">
+
+    <div class="recital">
+      <h2>🎵 Nocturne in E-flat Major</h2>
+      <audio controls>
+        <source src="media/nocturne.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="recital">
+      <h2>🎵 Rachmaninoff Prelude (Google Drive)</h2>
+      <iframe src="https://drive.google.com/file/d/GOOGLE_FILE_ID/preview" height="80" allow="autoplay"></iframe>
+    </div>
+
+    <div class="recital">
+      <h2>🎵 Debussy - Clair de Lune (Video)</h2>
+      <video controls>
+        <source src="media/clair_de_lune.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
   </div>
 
-   <div class="recital">
-    <h2>🎵 The Entertainer by Scott Joplin performed by Stephen Murphy (Google Drive)</h2>
-    <iframe src="https://drive.google.com/file/d/1BbVJbpnScKFKfE8OfjRafWEnGazLl4Ij/preview" width="600" height="400" allow="autoplay"></iframe>
-  </div>
+  <footer>
+    © 2025 by [Your Name] — Keep playing, keep dreaming 🎹✨
+  </footer>
 
 </body>
-
 </html>
-
-
-
-
