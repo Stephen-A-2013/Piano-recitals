@@ -27,16 +27,21 @@
       flex: 1;
     }
     .header-img {
-      position: absolute;
-      right: 2rem;
-      top: 50%;
-      transform: translateY(-50%);
       height: 70px;
       width: auto;
       border-radius: 12px;
       box-shadow: 0 0 8px rgba(0,0,0,0.16);
       background: #f8f9fa;
       object-fit: contain;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .header-img-left {
+      left: 2rem;
+    }
+    .header-img-right {
+      right: 2rem;
     }
     header h1 {
       margin: 0;
@@ -76,11 +81,12 @@
 <body>
 
   <header>
+    <img class="header-img header-img-left" src="https://drive.google.com/uc?export=view&id=1n7iT4cStxffkPCwfuKHYDLRvMCKyZXp5" alt="Header Image Left">
     <div class="header-content">
       <h1>🎶 My Piano Recitals</h1>
       <p>Scott Joplin's greatest hits</p>
     </div>
-    <img src="data:image/webp;base64,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" alt="Piano" class="header-img">
+    <img class="header-img header-img-right" src="data:image/webp;base64,UklGRq4OAABXRUJQVlA4IKIOAABQWACdASoJAbQAPp1Em0klo6khLBcbkSATiWkIcAGdnCb9NfEHsnTBDj+zV3MzaAZTL+W3zxng01EDsh3ly/LoZsQcXP6zyi32L185UKE/LnQ9GZL6R/yfgeAM6HezyI7lliZ4BQq[...]" alt="Piano Image Right">
   </header>
 
   <div class="container">
